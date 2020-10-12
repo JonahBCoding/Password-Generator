@@ -13,7 +13,7 @@ The UI is simple to use and remarkably efficient taking only seconds to generate
 https://jonahbcoding.github.io/Password-Generator/
 
 ## Screenshot
-![Screenshot](/Step 8.png)
+![Screenshot](/Step-8.png)
 
 ## Contribution
 
