@@ -7,7 +7,8 @@ When interacted with the generator will ask you How long you would like your pas
 
 
 ![Step1](/This PC/Pictures/passwordImages)
-Format: ![Alt Text](url(./This PC/Pictures/passwordImages)
+Format: ![Alt Text](url ./This PC/Pictures/passwordImages
+
 
 
 
