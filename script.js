@@ -12,7 +12,7 @@ var alphaUpper = ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M
 var confirmLength = "";
 var confirmSpecialCharacter;
 var confirmNumericCharacter;
-var confirmUppercase;
+var confirmUpperCase;
 var confirmLowerCase;
 
 
@@ -61,26 +61,25 @@ function generatePassword() {
 
   if (confirmSpecialCharacter === true) {
     passwordCharacters = passwordCharacters.concat(specialChar)
-  } else {
-    passwordCharacters = "";
+  } else if (confirmSpecialCharacter === false) {
+    passwordCharacters = passwordCharacters
   }
-
   if (confirmNumericCharacter === true) {
     passwordCharacters = passwordCharacters.concat(number)
-  } else {
-    passwordCharacters = passwordCharacters = "";
+  } else if (confirmNumericCharacter === false) {
+    passwordCharacters = passwordCharacters
   }
 
   if (confirmLowerCase === true) {
     passwordCharacters = passwordCharacters.concat(alphaLower)
-  } else {
-    passwordCharacters = "";
+  } else if (confirmLowerCase === false) {
+    passwordCharacters = passwordCharacters
   }
 
   if (confirmUpperCase === true) {
     passwordCharacters = passwordCharacters.concat(alphaUpper)
-  } else {
-    passwordCharacters = "";
+  } else if (confirmUpperCase === false) {
+    passwordCharacters = passwordCharacters 
   }
 
   
