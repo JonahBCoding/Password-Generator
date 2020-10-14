@@ -59,20 +59,28 @@ function generatePassword() {
 
   var passwordCharacters = []
 
-  if (confirmSpecialCharacter) {
+  if (confirmSpecialCharacter === true) {
     passwordCharacters = passwordCharacters.concat(specialChar)
+  } else {
+    passwordCharacters = "";
   }
 
-  if (confirmNumericCharacter) {
+  if (confirmNumericCharacter === true) {
     passwordCharacters = passwordCharacters.concat(number)
+  } else {
+    passwordCharacters = passwordCharacters = "";
   }
 
-  if (confirmLowerCase) {
+  if (confirmLowerCase === true) {
     passwordCharacters = passwordCharacters.concat(alphaLower)
+  } else {
+    passwordCharacters = "";
   }
 
-  if (confirmUpperCase) {
+  if (confirmUpperCase === false) {
     passwordCharacters = passwordCharacters.concat(alphaUpper)
+  } else {
+    passwordCharacters = "";
   }
 
   console.log(passwordCharacters)
