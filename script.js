@@ -77,13 +77,13 @@ function generatePassword() {
     passwordCharacters = "";
   }
 
-  if (confirmUpperCase === false) {
+  if (confirmUpperCase === true) {
     passwordCharacters = passwordCharacters.concat(alphaUpper)
   } else {
     passwordCharacters = "";
   }
 
-  console.log(passwordCharacters)
+  
 
   // Empty string to be filled based on for loop selecting random characters from the array
   var randomPassword = "";
